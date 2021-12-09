@@ -12,7 +12,7 @@ public class GetAllProjectsTest {
 	public void getAllProjects() {
 		Response rsps = RestAssured.get("http://localhost:8084/projects");
 
-//		System.out.println(rsps.asString());
+//		System.out.println(rsps.asString()); // randomly printing
 		Reporter.log(rsps.prettyPrint(), true);
 		Reporter.log(rsps.getContentType(), true); // application/json
 		System.out.println(rsps.getStatusCode()); // 200

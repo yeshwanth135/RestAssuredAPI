@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-08T21:02:29 IST" name="Default suite" finished-at="2021-12-08T21:02:31 IST" duration-ms="1967">
+  <suite started-at="2021-12-09T17:55:21 IST" name="Default suite" finished-at="2021-12-09T17:55:24 IST" duration-ms="3491">
     <groups>
     </groups>
-    <test started-at="2021-12-08T21:02:29 IST" name="Default test" finished-at="2021-12-08T21:02:31 IST" duration-ms="1967">
-      <class name="SimpleWay.CreateUsingPostTest">
-        <test-method signature="createUsingPost()[pri:0, instance:SimpleWay.CreateUsingPostTest@247d8ae]" started-at="2021-12-08T21:02:29 IST" name="createUsingPost" finished-at="2021-12-08T21:02:31 IST" duration-ms="1928" status="PASS">
+    <test started-at="2021-12-09T17:55:21 IST" name="Default test" finished-at="2021-12-09T17:55:24 IST" duration-ms="3491">
+      <class name="Parameters.QueryParameterTest">
+        <test-method signature="queryParameter()[pri:0, instance:Parameters.QueryParameterTest@247d8ae]" started-at="2021-12-09T17:55:21 IST" name="queryParameter" finished-at="2021-12-09T17:55:24 IST" duration-ms="3446" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUsingPost -->
-      </class> <!-- SimpleWay.CreateUsingPostTest -->
+        </test-method> <!-- queryParameter -->
+      </class> <!-- Parameters.QueryParameterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

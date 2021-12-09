@@ -1,4 +1,4 @@
-package FirstPackage;
+package DifferentWays;
 
 import java.util.Random;
 
@@ -13,17 +13,17 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
-public class CreateProjectTest
+public class CreateProjectUsingJsonObjectTest
 {
 	@Test
-	public void createProject()
+	public void usingJsonObject()
 	{
 		Random r = new Random();
-		int randomNum = r.nextInt(2000);
+		int rNum = r.nextInt(2000);
 		
 		JSONObject jObj = new JSONObject();
 		jObj.put("createdBy", "Roja");
-		jObj.put("projectName", "TYSS-02"+randomNum);
+		jObj.put("projectName", "TYSS-02"+rNum);
 		jObj.put("status", "Finished");
 		jObj.put("teamSize", 7);
 		

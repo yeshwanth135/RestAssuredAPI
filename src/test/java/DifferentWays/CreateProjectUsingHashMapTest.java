@@ -1,6 +1,7 @@
 package DifferentWays;
 
 import java.util.HashMap;
+import java.util.Random;
 
 import org.testng.annotations.Test;
 
@@ -10,11 +11,14 @@ import static io.restassured.RestAssured.*;
 
 public class CreateProjectUsingHashMapTest {
 	@Test
-	public void createProjectUsingHashMap()
+	public void usingHashMap()
 	{
+		Random r = new Random();
+		int rNum = r.nextInt(2000);
+		
 		HashMap hm = new HashMap();
 		hm.put("createdBy", "Mapped");
-		hm.put("projectName", "Hash007");
+		hm.put("projectName", "Hash"+rNum);
 		hm.put("status", "Continue");
 		hm.put("teamSize", 5);
 		

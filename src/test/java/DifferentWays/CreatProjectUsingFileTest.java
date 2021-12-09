@@ -10,7 +10,7 @@ import io.restassured.http.ContentType;
 
 public class CreatProjectUsingFileTest {
 	@Test
-	public void creatProjectUsingFile()
+	public void usingFile()
 	{
 		File file = new File("./data.json");
 		
@@ -20,8 +20,8 @@ public class CreatProjectUsingFileTest {
 		.when()
 		.post("http://localhost:8084/addProject")
 		.then()
-//		.assertThat()
-//		.statusCode(201)
+		.assertThat()
+		.statusCode(201)
 		.log().all();
 	}
 }
