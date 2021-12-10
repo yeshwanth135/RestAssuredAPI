@@ -16,5 +16,4 @@ public class QueryParameterTest {
 		.log()
 		.all();
 	}
-
 }
