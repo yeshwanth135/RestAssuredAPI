@@ -15,23 +15,8 @@ import FirstPackage.CreateProjectTest;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class RequestChaining {
+public class CreateToDeleteTest {
 
-	@Test
-	public void createProject()
-	{		
-		Response rsps = when().get("http://localhost:8084/projects");
-		String actId = rsps.jsonPath().get("[0].projectId");
-		
-		given().pathParam("ProId", actId)
-		.when()
-		.delete("http://localhost:8084/projects/{ProId}")
-		.then()
-		.assertThat()
-		.statusCode(204)
-		.log()
-		.all();
-	}
 	@Test
 	public void createToDelete()
 	{
@@ -53,23 +38,6 @@ public class RequestChaining {
 		.assertThat()
 		.statusCode(204)
 		.log()
-		.all();
-		
-	}
-	
-	@Test
-	public void deleteProject()
-	{		
-		Response rsps = when().get("http://localhost:8084/projects");
-		rsps.then().assertThat().statusCode(200);
-		String actId = rsps.jsonPath().get("[0].projectId");
-		
-		when()
-		.delete("http://localhost:8084/projects/"+actId)
-		.then()
-		.assertThat()
-		.statusCode(204)
-		.log()
-		.all();
+		.all();	
 	}
 }

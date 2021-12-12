@@ -1,6 +1,5 @@
 package FirstPackage;
 
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -13,8 +12,8 @@ public class GetAllProjectsTest {
 		Response rsps = RestAssured.get("http://localhost:8084/projects");
 
 //		System.out.println(rsps.asString()); // randomly printing
-		Reporter.log(rsps.prettyPrint(), true);
-		Reporter.log(rsps.getContentType(), true); // application/json
+		System.out.println(rsps.prettyPrint()); // Proper Way Printing
+		System.out.println(rsps.getContentType()); // application/json
 		System.out.println(rsps.getStatusCode()); // 200
 		
 		ValidatableResponse vResp = rsps.then();

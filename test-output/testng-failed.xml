@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RequestChaining.RequestChaining">
+      <class name="Parameters.GitHubPathParameterTest">
         <methods>
-          <include name="createProject"/>
+          <include name="gitHubPathParameter"/>
         </methods>
-      </class> <!-- RequestChaining.RequestChaining -->
+      </class> <!-- Parameters.GitHubPathParameterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

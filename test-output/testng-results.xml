@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-10T15:13:40 IST" name="Default suite" finished-at="2021-12-10T15:13:43 IST" duration-ms="2525">
+  <suite started-at="2021-12-12T12:36:49 IST" name="Default suite" finished-at="2021-12-12T12:36:51 IST" duration-ms="2408">
     <groups>
     </groups>
-    <test started-at="2021-12-10T15:13:40 IST" name="Default test" finished-at="2021-12-10T15:13:43 IST" duration-ms="2525">
+    <test started-at="2021-12-12T12:36:49 IST" name="Default test" finished-at="2021-12-12T12:36:51 IST" duration-ms="2408">
       <class name="Parameters.GitHubPathParameterTest">
-        <test-method signature="gitHubPathParameter()[pri:0, instance:Parameters.GitHubPathParameterTest@247d8ae]" started-at="2021-12-10T15:13:40 IST" name="gitHubPathParameter" finished-at="2021-12-10T15:13:43 IST" duration-ms="2490" status="PASS">
+        <test-method signature="gitHubPathAndQueryParameter()[pri:0, instance:Parameters.GitHubPathParameterTest@6c130c45]" started-at="2021-12-12T12:36:49 IST" name="gitHubPathAndQueryParameter" finished-at="2021-12-12T12:36:51 IST" duration-ms="2369" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gitHubPathParameter -->
+        </test-method> <!-- gitHubPathAndQueryParameter -->
       </class> <!-- Parameters.GitHubPathParameterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
