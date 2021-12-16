@@ -26,15 +26,12 @@ public class CreateProjectUsingPojoLibraryTest {
 		
 		POJOLibrary pojo = new POJOLibrary("Arun", "Surya"+randomNum+"", "Completed", 5);
 		given()
-		.contentType(ContentType.JSON)
-		.body(pojo)
+			.contentType(ContentType.JSON)
+			.body(pojo)
 		.when()
-		.post("http://localhost:8084/addProject")
+			.post("http://localhost:8084/addProject")
 		.then()
-		.assertThat()
-		.statusCode(201)
-		.log()
-		.all();
-		
+			.assertThat().statusCode(201)
+			.log().all();
 	}
 }

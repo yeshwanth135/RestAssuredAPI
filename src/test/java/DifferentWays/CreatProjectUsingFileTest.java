@@ -15,13 +15,12 @@ public class CreatProjectUsingFileTest {
 		File file = new File("./data.json");
 		
 		given()
-		.contentType(ContentType.JSON)
-		.body(file)
+			.contentType(ContentType.JSON)
+			.body(file)
 		.when()
-		.post("http://localhost:8084/addProject")
+			.post("http://localhost:8084/addProject")
 		.then()
-		.assertThat()
-		.statusCode(201)
-		.log().all();
+			.assertThat().statusCode(201)
+			.log().all();
 	}
 }

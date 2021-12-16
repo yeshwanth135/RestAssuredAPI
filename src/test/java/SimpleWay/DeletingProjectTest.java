@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import io.restassured.http.ContentType;
 
 public class DeletingProjectTest {
-	@Test
+	@Test(enabled = false)
 	public void deletingProject()
 	{
 		when()

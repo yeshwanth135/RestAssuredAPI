@@ -11,7 +11,7 @@ import com.RMGYantra.pojoLibrary.POJOLibrary;
 
 import io.restassured.http.ContentType;
 
-public class CreateProjectUsingDataProviderTest
+public class CreateProjectMultipleTimesTest
 {
 	@DataProvider
 	public Object[][]  providingData()
@@ -38,15 +38,14 @@ public class CreateProjectUsingDataProviderTest
 		int randomNum = r.nextInt(2000);
 		
 		POJOLibrary pojo = new POJOLibrary(createdBy, projectName+randomNum, status, teamSize);
+		
 		given()
-		.contentType(ContentType.JSON)
-		.body(pojo)
+			.contentType(ContentType.JSON)
+			.body(pojo)
 		.when()
-		.post("http://localhost:8084/addProject")
+			.post("http://localhost:8084/addProject")
 		.then()
-		.assertThat()
-		.statusCode(201)
-		.log()
-		.all();
+			.assertThat().statusCode(201)
+			.log().all();
 	}
 }

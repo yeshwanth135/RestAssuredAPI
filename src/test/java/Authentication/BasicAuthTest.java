@@ -10,12 +10,11 @@ public class BasicAuthTest {
 	public void basicAuth()
 	{
 		given()
-		.auth().basic("rmgYantra", "rmgy@9999")
+			.auth().basic("rmgYantra", "rmgy@9999")
 		.when()
-		.get("http://localhost:8084/login")
+			.get("http://localhost:8084/login")
 		.then()
-		.log()
-		.all();
+			.log().all();
 	}
 
 }

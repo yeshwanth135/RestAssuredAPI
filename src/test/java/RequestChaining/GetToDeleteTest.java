@@ -13,15 +13,11 @@ public class GetToDeleteTest {
 	public void getToDelete()
 	{		
 		Response rsps = when().get("http://localhost:8084/projects");
-		String actId = rsps.jsonPath().get("[0].projectId");
+		String pId = rsps.jsonPath().get("[0].projectId");
 		
-		given().pathParam("ProId", actId)
-		.when()
-		.delete("http://localhost:8084/projects/{ProId}")
-		.then()
-		.assertThat()
-		.statusCode(204)
-		.log()
-		.all();
+		
+		given().pathParam("ProId", pId)
+		.when().delete("http://localhost:8084/projects/{ProId}")
+		.then().assertThat().statusCode(204).log().all();
 	}
 }

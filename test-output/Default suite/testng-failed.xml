@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Parameters.GitHubPathParameterTest">
+      <class name="Authentication.OAuthTest">
         <methods>
-          <include name="gitHubPathParameter"/>
+          <include name="oAuth"/>
         </methods>
-      </class> <!-- Parameters.GitHubPathParameterTest -->
+      </class> <!-- Authentication.OAuthTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
