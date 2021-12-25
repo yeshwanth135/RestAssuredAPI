@@ -12,13 +12,13 @@ public class GetProjectsTest
 	public void getProjects()
 	{
 		when()
-		.get("http://localhost:8084/projects")
+			.get("http://localhost:8084/projects")
 		.then()
-		.assertThat()
-		.statusCode(200)
-		.and()
-		.contentType(ContentType.JSON)
-		.log()
-		.all();
+			.assertThat()
+			.statusCode(200)
+			.and()
+			.contentType(ContentType.JSON)
+			.log()
+			.all();
 	}
 }

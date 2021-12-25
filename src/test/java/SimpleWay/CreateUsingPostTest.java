@@ -1,13 +1,11 @@
 package SimpleWay;
 
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.given;
 
 import java.util.Random;
 
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
-
-import com.RMGYantra.pojoLibrary.POJOLibrary;
 
 import io.restassured.http.ContentType;
 
