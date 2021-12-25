@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import com.RMGYantra.pojoLibrary.POJOLibrary;
 
-import FirstPackage.CreateProjectTest;
+import WithoutBDD.CreateProjectTest;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 

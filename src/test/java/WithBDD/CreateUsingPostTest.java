@@ -1,4 +1,4 @@
-package SimpleWay;
+package WithBDD;
 
 import static io.restassured.RestAssured.given;
 
@@ -24,15 +24,15 @@ public class CreateUsingPostTest {
 		jObj.put("teamSize", 5);
 
 		given()
-		.contentType(ContentType.JSON)
-		.body(jObj)
+			.contentType(ContentType.JSON)
+			.body(jObj)
 		.when()
-		.post("http://localhost:8084/addProject")
+			.post("http://localhost:8084/addProject")
 		.then()
-		.assertThat()
-		.statusCode(201)
-		.log()
-		.all();
+			.assertThat()
+			.statusCode(201)
+			.log()
+			.all();
 		
 	}
 }

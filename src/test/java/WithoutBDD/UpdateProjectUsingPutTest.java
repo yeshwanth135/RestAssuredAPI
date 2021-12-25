@@ -1,4 +1,4 @@
-package FirstPackage;
+package WithoutBDD;
 
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;

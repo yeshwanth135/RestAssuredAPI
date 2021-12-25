@@ -1,13 +1,15 @@
 package com.RMGYantra.pojoLibrary;
 
 public class POJOLibrary {
+
 	String createdBy;
 	String projectName;
 	String status;
 	int teamSize;
 
-	public POJOLibrary(String createdby, String projectName, String status, int teamSize) {
-		this.createdBy = createdby;
+	public POJOLibrary(String createdBy, String projectName, String status, int teamSize) {
+
+		this.createdBy = createdBy;
 		this.projectName = projectName;
 		this.status = status;
 		this.teamSize = teamSize;
@@ -44,4 +46,5 @@ public class POJOLibrary {
 	public void setTeamSize(int teamSize) {
 		this.teamSize = teamSize;
 	}
+
 }

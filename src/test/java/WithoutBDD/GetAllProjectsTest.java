@@ -1,4 +1,4 @@
-package FirstPackage;
+package WithoutBDD;
 
 import org.testng.annotations.Test;
 

@@ -1,16 +1,15 @@
-package SimpleWay;
-
-import static io.restassured.RestAssured.*;
+package WithBDD;
 
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
+import static io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
 
 public class UpdateUsingPutTest {
 	@Test
-	public void updateUsingPut()
-	{
+	public void updateUsingPut() {
+		
 		JSONObject jObj = new JSONObject();
 		jObj.put("createdBy", "Azadhi");
 		jObj.put("projectName", "TYS");
@@ -18,15 +17,14 @@ public class UpdateUsingPutTest {
 		jObj.put("teamSize", 11);
 		
 		given()
-		.contentType(ContentType.JSON)
-		.body(jObj)
+			.contentType(ContentType.JSON)
+			.body(jObj)
 		.when()
-		.put("http://localhost:8084/projects/TY_PROJ_1608")
+			.put("http://localhost:8084/projects/TY_PROJ_1608")
 		.then()
-		.assertThat()
-		.statusCode(200)
-		.log()
-		.all();
+			.assertThat()
+			.statusCode(200)
+			.log()
+			.all();
 	}
-
 }
